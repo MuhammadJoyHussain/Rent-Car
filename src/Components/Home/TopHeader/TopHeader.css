@@ -1,0 +1,34 @@
+.main{
+    height: 600px;
+    margin-top: 200px;
+    display:flex;
+}
+
+.text-area{
+    margin-left: 20%;
+}
+
+.text-area h1{
+    margin-bottom: 50px;
+}
+.text-area button{
+    margin-top:20px;
+}
+
+.main img{
+    margin: 10px;
+    width:300px;
+}
+
+
+@media(max-width: 800px){
+    .main{
+        display: inline;
+    }
+    .text-area{
+        margin: 20px 100px;
+    }
+    .main img{
+        margin-left: 25%;
+    }
+}

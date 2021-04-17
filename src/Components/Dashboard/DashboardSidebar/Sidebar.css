@@ -1,0 +1,35 @@
+.sidebar{
+    top: 0;
+    background-image: linear-gradient(to bottom, #330000,	#000033);
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar li{
+    list-style: none;
+    margin-bottom: 2em;
+}
+.sidebar li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+.sidebar li:hover span{
+    display: inline-block;
+    transform: translate(5px);
+}
+.logout-btn{
+    margin-left: 15px;
+    margin-top: 350px;
+}
+.logout{
+    text-decoration: none;
+    color: white;
+}
+
+@media(max-width: 500px){
+    .sidebar{
+        width: 200px;
+    }
+}

@@ -1,0 +1,15 @@
+.product{
+    margin-left: 20%;
+}
+.product h3{
+    color: #152238;
+}
+.product button{
+    width: 30px;
+    height: 30px;
+    color: red;
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+    border-radius: 25%;
+}

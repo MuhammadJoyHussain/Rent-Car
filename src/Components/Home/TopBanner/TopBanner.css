@@ -1,0 +1,32 @@
+.banner-area{
+    background-image: url(../../../Images/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 700px;
+}
+
+.pick-up{
+    font-size: 17px;
+    margin-left: 10%;
+    margin-top: 5%;
+    text-transform: uppercase;
+    color: white;
+}
+.drop-off{
+    font-size: 17px;
+    margin-left: 10%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.date-picker{
+    color: white;
+    padding: 10px 17px;
+    background-color: inherit;
+}
+
+/* .banner-area p{
+    color: white;
+    margin-left: 80%;
+    margin-top: 20%;
+} */

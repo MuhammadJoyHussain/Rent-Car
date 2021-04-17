@@ -1,0 +1,20 @@
+.book{
+    margin-left: 30%;
+}
+.ship-form{
+    margin:30px 100px;
+}
+.ship-form input {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 300px;
+}
+.ship-form button{
+    width: 100px;
+}
+.error{
+    color: red;
+}

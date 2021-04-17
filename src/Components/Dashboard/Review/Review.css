@@ -1,0 +1,15 @@
+.form-area{
+    margin-top: 10px;
+    margin-left: 30%;
+}
+.form-area input{
+    margin-top: 10px;
+}
+.form-area button{
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    color: white;
+    background-color: burlywood;
+    border: none;
+}

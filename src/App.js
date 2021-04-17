@@ -1,24 +1,69 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Home from './Components/Home/Home/Home';
+import About from './Components/About/About/About';
+import Review from './Components/Dashboard/Review/Review';
+import Book from './Components/Dashboard/Book/Book';
+import BookingList from './Components/Dashboard/BookingList/BookingList';
+import Login from './Components/Login/Login/Login';
+import { createContext, useState } from 'react';
+import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
+import AddService from './Components/Admin/AddService/AddService';
+import OrderedList from './Components/Admin/OrderedList/OrderedList';
+import ManageProducts from './Components/Admin/ManageProducts/ManageProducts';
+
+export const UserContext = createContext();
 
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+      <Router>
+        <Switch>
+
+          <Route path="/home">
+            <Home />
+          </Route>
+
+          <Route path="/about">
+            <About />
+          </Route>
+
+          <Route path="/dashboard/book">
+            <Book />
+          </Route>
+
+          <Route path="/bookings">
+            <BookingList />
+          </Route>
+
+          <Route path="/review">
+            <Review />
+          </Route>
+          
+          <Route path="/admin/order">
+            <OrderedList />
+          </Route>
+
+          <Route path="/product">
+            <AddService />
+          </Route>
+          
+          <Route path="/manage">
+            <ManageProducts />
+          </Route>
+
+          <Route path="/login">
+            <Login />
+          </Route>
+
+          <Route exact path="/">
+            <Home />
+          </Route>
+
+        </Switch>
+      </Router>
+    </UserContext.Provider>
   );
 }
 
