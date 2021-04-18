@@ -14,7 +14,7 @@ const AdminSidebar = () => {
                 </Link>
             </li>
             <li>
-                <Link to="/admin/order">
+                <Link to="/order">
                     <FontAwesomeIcon icon={faCartPlus} /> Order List
                 </Link>
             </li>
