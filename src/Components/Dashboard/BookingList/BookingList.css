@@ -1,3 +1,12 @@
 .book-list{
-    margin-left: 30%;
+    margin-left: 15%;
+}
+
+.booking{
+    display: flex;
+    margin-top: 5px;
+}
+
+.book-list p{
+    margin: 10px;
 }

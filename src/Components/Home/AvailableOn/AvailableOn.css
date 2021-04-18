@@ -1,0 +1,14 @@
+.available img{
+    width: 500px;
+    margin-left: 30%;
+}
+.available-text{
+    margin-left: 30%;
+    display: flex;
+}
+.available-text h3{
+    padding: 10px;
+    box-shadow: 2px 2px 2px 1px gray;
+    margin-left: 20px;
+    text-align: center;
+}

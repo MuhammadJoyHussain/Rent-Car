@@ -52,10 +52,10 @@ const Review = () => {
                     <input style={{width:"400px", height:"40px"}} {...register("designation", { required: true })} placeholder="Company's Name, Designation" />
                     {errors.designation && <span>This field is required</span>}
                     <br/>
-                    <input style={{width:"400px", height:"100px"}} {...register("discription", { required: true })} placeholder="Description" />
+                    <input style={{width:"400px", paddingBottom: "90px"}} {...register("discription", { required: true })} placeholder="Description" />
                     {errors.discription && <span>This field is required</span>}
                     <br/>
-                    <input style={{width:"400px", height:"100px"}} {...register("img", { required: true })} type="file" onChange={handleImageUpload} />
+                    <input {...register("img", { required: true })} type="file" onChange={handleImageUpload} />
                     {errors.img && <span>This field is required</span>}
                     <br/>
                     <button type="submit">Submit</button>

@@ -1,15 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
-const ServiceDetail = ({ service }) => {
+const ServiceDetail = (props) => {
+    const { imageURL, event, vehicle, price, _id } = props.service;
+    const history = useHistory();
+    const details = () => {
+        const url = `/dashboard/book${_id}`
+        history.push(url)
+    }
+
     return (
         <div className="service-card">
-            <img src={service.imageURL} alt="" />
+            <img src={imageURL} alt="" />
             <div className="info">
-                <h1>{service.event}</h1>
-                <h4>Vehicle Name: {service.vehicle}</h4>
-                <h4>Price Per Day: $ {service.price}</h4>
-                <Link to="/dashboard/book"><button>Book Now</button></Link>
+                <h1>{event}</h1>
+                <h4>Vehicle Name: {vehicle}</h4>
+                <h4>Price Per Day: $ {price}</h4>
+                <Link onClick={() => details()}><button>Book Now</button></Link>
             </div>
         </div>
     );

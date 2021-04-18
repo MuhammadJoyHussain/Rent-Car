@@ -1,0 +1,16 @@
+.topbar{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+.topbar li{
+    margin: 15px;
+    list-style: none;
+}
+.topbar li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}

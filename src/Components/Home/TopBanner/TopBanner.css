@@ -2,31 +2,19 @@
     background-image: url(../../../Images/header.jpg);
     background-position: center center;
     background-size: cover;
-    height: 700px;
+    height: 800px;
 }
-
-.pick-up{
-    font-size: 17px;
-    margin-left: 10%;
-    margin-top: 5%;
-    text-transform: uppercase;
-    color: white;
+.banner{
+    margin: 50px;
 }
-.drop-off{
-    font-size: 17px;
-    margin-left: 10%;
-    text-transform: uppercase;
+.banner h1{
     color: white;
 }
 
-.date-picker{
+.banner p{
+    width: 100vh;
     color: white;
-    padding: 10px 17px;
-    background-color: inherit;
 }
-
-/* .banner-area p{
-    color: white;
-    margin-left: 80%;
-    margin-top: 20%;
-} */
+.banner button{
+    margin-top: 40px;
+}

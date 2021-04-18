@@ -43,21 +43,21 @@ const AddService = () => {
         <div>
             <div><AdminSidebar /> </div>
             <div className="service">
-            <form onSubmit={handleSubmit(onSubmit)}>
-                  <h1>Review</h1>
-                    <input style={{width:"400px", height:"40px"}} {...register("event", { required: true })} placeholder="Event Name" />
+            <form className="form" onSubmit={handleSubmit(onSubmit)}>
+                  <h1>Add A Service</h1>
+                    <input {...register("event", { required: true })} placeholder="Event Name" />
                     {errors.event && <span>This field is required</span>}
                     <br/>
-                    <input style={{width:"400px", height:"40px"}} {...register("vehicle", { required: true })} placeholder="Vehicle Name" />
+                    <input {...register("vehicle", { required: true })} placeholder="Vehicle Name" />
                     {errors.vehicle && <span>This field is required</span>}
                     <br/>
-                    <input style={{width:"400px", height:"40px"}} type="int" {...register("price", { required: true })} placeholder="Price" />
+                    <input type="int" {...register("price", { required: true })} placeholder="Price" />
                     {errors.price && <span>This field is required</span>}
                     <br/>
                     <input {...register("img", { required: true })} type="file" onChange={handleImageUpload} />
                     {errors.img && <span>This field is required</span>}
                     <br/>
-                    <button type="submit">Submit</button>
+                    <button className="btn-style" type="submit">Submit</button>
                 </form>
             </div>
         </div>

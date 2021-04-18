@@ -1,21 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from '../../Shared/Navbar/Navbar';
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import './TopBanner.css'
 
 const TopBanner = () => {
-    const [startDate, setStartDate] = useState(new Date());
+    
+
+
     return (
         <div className="banner-area">
-            <Navbar />
-            <div className="pick-up">
-                <DatePicker className="date-picker" selected={startDate} onChange={date => setStartDate(date)} />
-                <p>Pick Up Date</p>
-            </div>
-            <div className="drop-off">
-                <DatePicker className="date-picker" selected={startDate} onChange={date => setStartDate(date)} />
-                <p>Dropping Date</p>
+            <div><Navbar /></div>
+            <div className="banner">
+            <h1>We Provide Rental Cars In Best Price</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ratione doloribus sapiente asperiores sunt aut numquam illo ducimus tenetur veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eaque sit vero nobis minus ea. Tempora quidem saepe veritatis dolor.</p>
+            <button className="btn-style">More Information</button>
             </div>
         </div>
     );

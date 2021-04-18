@@ -4,9 +4,7 @@ import { useHistory, useLocation } from 'react-router-dom';
 import "firebase/auth";
 import firebaseConfig from './Firebase.config';
 import { UserContext } from "../../../App";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './login.css'
-import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 const Login = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -45,8 +43,9 @@ const Login = () => {
     }
 
     return (
-        <div>
-            <button className="login-btn" onClick={handleGoogleSignIn}><FontAwesomeIcon icon={faGoogle} /> Google Sign in</button>
+
+        <div className="login-btn">
+            <i onClick={handleGoogleSignIn} className="fab fa-google">Login with Google</i>
         </div>
     );
 };
